@@ -1,0 +1,115 @@
+console.log("This code and storyline is written by Isaac Earl");
+
+console.log("Welcome to Treasure Island.");
+console.log("There is a treasure chest on the island in the lake, can you find it?");
+
+// First choice of where to go
+let choice_1 = prompt("You've come to a lake. There is an island in the middle of the lake. Type 'wait' to wait for a boat. Type 'swim' to swim across. Or type 'raft' to make a raft to get across.");
+
+if (choice_1 === "swim") {
+    console.log("You got attacked by an angry trout and drowned. Game Over");
+    console.log("Better luck next time.");
+    exit(1);
+} else if (choice_1 === "raft") {
+    console.log("You start making a raft.");
+} else if (choice_1 === "wait") {
+    console.log("You waited for a boat but it never came.");
+    let extra = prompt("Should you swim or make a raft to get across? Type 'swim' to swim and type 'raft' to build a raft.");
+
+    if (extra === 'swim') {
+        console.log("You got attacked by an angry trout and drowned. Game Over");
+        console.log("Better luck next time.");
+        exit(1);
+    } else if (extra === 'raft') {
+        console.log("You start making a raft.");
+    } else {
+        console.log("Using an imaginary transport are we? Game Over for trying to cheat");
+        console.log("Better luck next time.");
+        exit(1);
+    }
+}
+
+let choice_2 = prompt("For putting your raft together what should you use? Type 'palm leaves' or 'rope'.");
+
+if (choice_2 === "rope") {
+    console.log("You use rope and set off on your raft.");
+} else if (choice_2 === "palm leaves") {
+    console.log("You use palm leaves and set off on your raft");
+    console.log("20 seconds after you set off the raft falls apart and you get attacked by an angry trout and drown. Game Over");
+    console.log("Better luck next time.");
+    exit(1);
+} else {
+    console.log("Using imaginary methods of transport are we? Game Over for trying to cheat");
+    console.log("Better luck next time.");
+    exit(1);
+}
+
+let choice_3 = prompt("You arrive at the island and there is a path left and right, which one do you follow? Type 'left' or 'right'");
+
+if (choice_3 === "left") {
+    console.log("You walked left, a bear came out and ate you. Game Over");
+    console.log("Better luck next time.");
+    exit(1);
+} else if (choice_3 === "right") {
+    console.log("You walk right");
+} else {
+    console.log("Um.... there isn't a path that way... Game Over for trying to cheat");
+    console.log("Better luck next time.");
+    exit(1);
+}
+
+let choice_4 = prompt("It is getting dark, you have two options, type 'camp' to stay and camp for the night or 'walk' to carry on walking.");
+
+if (choice_4 === "walk") {
+    console.log("You carry on walking, but suddenly a pack of wolves spring out before you and tear you to pieces. Game Over");
+    console.log("Better luck next time.");
+    exit(1);
+} else if (choice_4 === "camp") {
+    console.log("You light a campfire and sleep under a tree for shelter.");
+} else {
+    console.log("Made up an imaginary option did you? Game Over for trying to cheat.");
+    console.log("Better luck next time.");
+    exit(1);
+}
+
+let choice_5 = prompt("You wake up and it is morning, you carry on walking. But then you see a little hut. Type 'enter' to enter the hut or 'walk' to walk away");
+
+if (choice_5 === 'enter') {
+    console.log("You walk in the hut, there is nothing there. But suddenly the floor opens like a trapdoor and drops you in a pond. An angry trout eats you. Game Over");
+    console.log("Better luck next time.");
+    exit(1);
+} else if (choice_5 === 'walk') {
+    console.log("You walk along and find yourself at a cliff, you see a chest in a brick shelter and open it. It has the treasure!");
+
+    console.log(`
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     \`"=.|                  |
+|___________________|__"=._o\`"-._        \`"=.______________|___________________
+          |                \`"=._o\`"=._      _\`"=._                     |
+ _________|_____________________:=._o "=._."_.-="\`"=.__________________|_______
+|                   |    __.--" , ; \`"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .\` \` \`\` ,  \`"-._"-._   ". '__|___________________
+          |           |o\`"=._\` , \`\` \`; .". ,  "-._"-._; ;              |
+ _________|___________| ;\`-.o\`"=._; ." \` \`\`."\\\` . "-._ /_______________|_______
+|                   | |o;    \`"-.o\`"=._\`\`  \`\` " ,__.--o;   |
+|___________________|_| ;     (#) \`-.o \`"=.\`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      \`".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+`);
+
+    console.log("You beat the game!");
+    console.log("Thank you for playing!");
+
+    console.log("Code and story written by Isaac Earl");
+    exit(1);
+} else {
+    console.log("Trying to use another option are you? Game Over for trying to cheat.");
+    exit(1);
+}
